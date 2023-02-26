@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style>
+        body{
+            background-image: -webkit-linear-gradient(120deg,#313131 50%,#4f5355 50%)
+        }
+        .tt{
+            border: 2px solid yellow;
+            width: 50%;
+            margin-left: 285px;
+            background:linear(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) ;
+        }
+        .form
+        {
+            border: 1px solid yellow;
+            width: 50%;
+            margin-left: 285px;
+            height: 500px;
+        }
+        button{
+            background-color: blanchedalmond;
+            border-radius: 3px;
+            
+        }
+        button:hover{
+            background-color: azure;
+            font-family: 'Times New Roman';
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div class="tt">
+            <h1 style="text-align: center; color: yellow;"> Feedback Form</h1>
+        </div><br>
+        <div class="form">
+            <form action="https://formsubmit.co/ahankare.am@gmail.com" method="POST">
+                <br>
+                <label for="name" style="margin-left: 150px;">Name :</label>
+                <input type="text" name="name" placeholder="Enter your name" required><br><br>
+                 
+                <label for="email" style="margin-left:150px ;">Email :</label>
+                <input type="email" name="email" placeholder="enter your email" ><br><br>
+
+                <label for="place" style="margin-left: 150px ;">Destinastion :</label>
+                <input type="place" name="place" placeholder="Enter your location"><br><br>
+
+                <label for="experience" style="margin-left: 150px;">experience :</label>
+                <select name="experience" id="">
+                    <option value="select">Select</option>
+                    <option value="excellnt">😍</option>
+                    <option value="very good">😀</option>
+                    <option value="good">😄</option>
+                    <option value="bad">😐</option>
+                    <option value="worst">😣</option>
+                </select><br><br>
+
+                <label for="feedback" style="margin-left:150px ;">Feedback :</label><br>
+                <textarea name="feedback" id="" cols="45" rows="5" style="margin-left: 150px;">enter your feedback</textarea><br><br>
+
+                <button style="margin-left:150px; border-radius: 4px;"  type="submit">Submit</a></button>
+
+
+            </form>
+            <h1 style="text-align: center; color: pink; font-family: verdana; font-size: 50px;">Thank you 😊</h1>
+        </div>
+
+</body>
+</html>

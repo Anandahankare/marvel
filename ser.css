@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: url(pally.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+
+}
+nav label span::before{
+    content: attr(data-text);
+    position: absolute;
+    color: red;
+    animation: lod 2s linear infinite;
+    overflow: hidden;
+}
+@keyframes lod 
+{
+    0%
+    { width: 0;}
+    100%
+    { width: 100;}
+    
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+   line-height: 80px;
+   margin: 10 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 4px;
+}
+a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 10px;
+    
+}
+.box{
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+margin: 10px}
+h2{
+    color: gold;
+}
+button{
+    border-radius: 6px;
+    background-color: greenyellow;
+}
+button:hover{
+    background-color: #1b9bff;}
